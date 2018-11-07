@@ -1,6 +1,6 @@
 # Spa Website for Ausra Spa Namai (Wordpress version)
 
-For the final project at Vilnius Coding School's Web Development Course I chose to create a Homepage for "Ausra Spa Namai" based on the design of template they have bought.
+For the final project at Vilnius Coding School's Web Development Course I chose to create a Homepage for "Ausra Spa Namai" based on the design of template this spa center has bought.
 
 I used several plugins for the Wordpress version of this project:
 - Advanced Custom Fields
