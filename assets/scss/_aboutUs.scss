@@ -1,0 +1,62 @@
+/* 4 SECTION START: ABOUT US */
+.about-us {
+  background-image: url("../images/wave-background-compressor.jpg");
+  background-size: cover;
+  background-position: center;
+
+  .container {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+}
+
+%hover {
+  border: 1px solid rgb(216, 211, 210);
+  background-color: rgb(247, 244, 240);
+  color: rgb(45, 42, 39);
+}
+
+/*centruojam turini: */
+.content-about-us {
+  justify-content: center;
+  margin-top: 163px;
+  margin-bottom: 202px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  max-width: 450px;
+  text-align: center;
+
+  h1 {
+    @include uppercase-title;
+    line-height: 28px;
+  }
+
+  h2 {
+    @include big-title;
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+    padding-bottom: 35px;
+    padding-top: 35px; 
+  }
+
+  p {
+    color: rgb(106, 101, 96);
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 28px;
+    padding-bottom: 35px;
+  }
+
+  .button {
+    letter-spacing: 2px;
+    transform: translateX(-50%);
+  }
+
+  a:hover {
+    @extend %hover;
+  }
+}
+
+/* 4 SECTION END: ABOUT US */

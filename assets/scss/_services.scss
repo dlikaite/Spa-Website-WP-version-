@@ -1,0 +1,54 @@
+/* 6 SECTION START: services */
+
+.paslaugos .container {
+  padding-bottom: 110px; /* atemiau 40px, nes nuotraukos i apacia turi 40px margin*/
+
+  .service-photos {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .spa {
+      width: 29.8568%;
+      margin-bottom: 40px;
+      position: relative; /* uzdedam ant nuotraukos teksta */
+      text-align: center;
+      color: white;
+
+      &:hover .overlayw3{
+        background-color: rgba(45, 42, 39, 0.5);
+      }
+    }
+  }
+}
+
+.paslaugos a {
+  font-family: $karla;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+
+  .centered {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlayw3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+  }
+}
+
+/* 6 SECTION END: services */

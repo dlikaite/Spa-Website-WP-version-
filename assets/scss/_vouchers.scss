@@ -1,0 +1,49 @@
+/* 7 SECTION START: VOUCHERS*/
+
+.voucher {
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    padding-top: 270px;
+    padding-bottom: 270px;
+    justify-content: flex-end;
+    align-items: center;
+
+    .voucher-content {
+      max-width: 400px;
+      position: relative;
+      text-align: center;
+
+      h3 {
+        @include big-title;
+        text-transform: capitalize;
+        color: rgb(106, 101, 96);
+        font-size: 1.125rem;
+      }
+
+      h4 {
+        @include uppercase-title;
+        display: inline-block;
+        font-size: 1.75rem;
+        line-height: 44px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: rgb(45, 42, 39);
+      }
+
+      a:hover {
+        @extend %hover;
+      }
+
+      .button {
+        margin-bottom: 240px;
+        letter-spacing: 2px;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+/* 7 SECTION END: VOUCHERS */

@@ -1,0 +1,121 @@
+/* 2 SECTION START: CAROUSEL */
+
+@mixin uppercase-title {
+  color: rgb(192, 183, 175);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: $karla;
+  letter-spacing: 3px;
+  font-style: normal;
+  font-weight: 400;
+
+}
+
+@mixin big-title {
+  color: rgb(45, 42, 39);
+  font-family: $marcellus;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin h4-spaces {
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+  padding-top: 25px;
+  padding-bottom: 45px;
+}
+
+.button {
+  padding: 16px 42px; /* tipo 11 ir 42*/
+  background-color: rgb(45, 42, 39);
+  border: rgb(106, 101, 96);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $karla;
+  font-size: 0.6875rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.hover_brown:hover {
+  background: #b8a48d;
+  color: #f7f4f0;
+}
+
+.hover_white:hover {
+  background: #fff;
+  color: black;
+}
+
+.carousel {
+  background-color: $baseColor;
+
+  .owl-carousel .owl-stage-outer {
+    transform: translateY(107px);
+
+    .special-container {
+      max-width: 1186px;
+      margin: 0 auto;
+      margin-left: 39.547px;
+      margin-right: 39.547px;
+      min-height: 100vh; /* kaip sitas sprendimas? 612px; 715px, 100vh*/
+      align-items: center;
+    }
+  }
+}
+
+
+.photo {
+  background-size: cover;
+  background-position: center;
+
+  &.first {
+    .content {
+      padding-left: 73px;
+      max-width: 623px;
+
+      h3 {
+        @include uppercase-title;
+        line-height: 26px;
+      }
+
+      h4 {
+        @include big-title;
+        @include h4-spaces;
+      }
+
+      // a:hover {
+      //   background: #b8a48d;
+      //   color: #f7f4f0;
+      // }
+    }
+  }
+
+  &.second {
+    justify-content: flex-end;
+
+    .content {
+      padding-left: 20px;
+      max-width: 623px;
+
+      h3 {
+        @include uppercase-title;
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      h4 {
+        @include big-title;
+        @include h4-spaces;        
+        color: rgb(255, 255, 255);
+      }
+
+      // a:hover {
+      //   background: #fff;
+      //   color: black;
+      // }
+    }
+  }
+}
+
+/* 2 SECTION END: CAROUSEL */

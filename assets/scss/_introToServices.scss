@@ -1,0 +1,39 @@
+/* 5 SECTION START: intro to services */
+
+.intro-to-service {
+  background-color: #fff;
+
+  .container {
+    padding-top: 125px;
+    padding-bottom: 70px;
+    justify-content: space-between;
+    align-items: center;
+
+    .antraste {
+      width: 430.844px;
+
+      h4 {
+        @include big-title;
+        font-size: 1.5rem;
+        text-align: left;
+        line-height: 34px;
+      }
+    }
+
+    a {
+      border: 1px solid rgb(224, 221, 221);
+      background-color: rgba(0, 0, 0, 0);
+      color: #2d2a27;
+      letter-spacing: 2px;
+      position: static;
+
+      &:hover{
+        color: #fff;
+        background-color: #2d2a27;
+        border-color: rgb(74, 71, 68);
+      }
+    }
+  }
+}
+
+/* 5 SECTION END: intro to services */

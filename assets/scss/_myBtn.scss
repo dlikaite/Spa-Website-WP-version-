@@ -1,0 +1,20 @@
+/* START: botton-to-top */
+.myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 99;
+  font-size: 0.6rem;
+  border: none;
+  outline: none;
+  background-color: #b7a48e;
+  color: white;
+  cursor: pointer;
+  padding: 14px 20px;
+
+  &:hover {
+    background-color: #a1886b;
+  }
+}
+/* END: botton-to-top */

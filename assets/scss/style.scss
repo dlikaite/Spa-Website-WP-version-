@@ -1,0 +1,253 @@
+@import "reset";
+@import "variables";
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?l3f3na');
+  src:  url('assets/fonts/icomoon.eot?l3f3na#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?l3f3na') format('truetype'),
+    url('../fonts/icomoon.woff?l3f3na') format('woff'),
+    url('../fonts/icomoon.svg?l3f3na#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search1:before {
+  content: "\e901";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+/******************************************************************/
+
+html{
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+.container{
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.flexinam {
+	display: flex;
+}
+
+ul {
+	list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: $karla;
+}
+
+p {
+  font-family: $roboto;
+  font-weight: 300;
+}
+
+@import "myBtn";
+@import "navigation";
+@import "carousel";
+@import "overlay";
+@import "aboutUs";
+@import "introToServices";
+@import "services";
+@import "vouchers";
+@import "news";
+@import "footer";
+@import "reservation";
+
+// NAVIGATION
+
+@media screen and (max-width: 800px) {
+
+  .float-navigation .meniu {
+    position: relative;
+    display: block;
+
+    a {
+      font-size: 1rem;
+
+      &.icon_burger {
+        display: block;
+      }  
+    }
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  .topnav.responsive {
+    position: absolute;
+    display: block;
+    width: 150px;
+    right: 0;
+    background-color: $baseColor;
+    text-align: right;
+    padding-bottom: 15px;
+    line-height: 30px;
+  }
+}
+
+// CAROUSEL SECTION
+
+@media all and (max-width: 600px) {
+  .photo {
+
+    &.first .content, &.second .content {
+      padding-left: 20px;
+      max-width: 280px;
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      h4{
+        font-size: 1.5rem;
+      }
+
+      .button{
+        padding: 10px 28px;
+        letter-spacing: 2px;
+      }
+    }
+
+    &.second .content {
+      max-width: 270px;
+
+      .button {
+        max-width: 30%;
+      }
+    }
+  }
+}
+
+// ABOUT US SECTION
+
+@media all and (max-width: 600px) {
+  .content-about-us {
+    margin-top: 170px;
+    margin-bottom: 170px;
+  }
+}
+
+// INTRO TO SERVICE
+
+@media all and (max-width: 1050px) {
+  .intro-to-service .container {
+    margin: 0 20px 0px 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .intro-to-service .container {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    display: block;
+    margin: 0 20px 0px 20px;
+    .antraste {
+      padding-bottom: 30px;
+      width: 350px;
+    }
+  }
+}
+
+// SERVICE
+
+@media all and (max-width: 1050px) {
+  .paslaugos .container {
+    margin: 0 20px 0px 20px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .paslaugos .container .service-photos .spa {
+    width: 47%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .paslaugos .container {
+    padding-bottom: 50px;
+    margin: 0 20px 0px 20px;
+    .service-photos .spa {
+      width: 100%;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+// VOUCHER
+
+@media all and (max-width: 1000px) {
+  .voucher .container {
+    padding-top: 260px;
+    padding-bottom: 250px;
+    justify-content: center;
+  }
+}
+
+// NEWS
+
+@media all and (max-width: 1050px) {
+  .news .container {
+    margin: 0 20px 0px 20px;
+    .one-news-column {
+      width: 100%;
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .news .container {
+    padding: 100px 20px;
+  }
+}
+
+// RESERVATIONS
+
+@media all and (max-width: 600px) {
+  .reservation .container {
+    margin: 0 20px 0px 20px;
+  }
+} 
